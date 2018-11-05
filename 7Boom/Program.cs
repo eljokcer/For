@@ -4,20 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace For
+namespace _7Boom
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int sum = 1, i = 1;
+            int i = 1;
             Console.WriteLine("Enter a number");
             int n = int.Parse(Console.ReadLine());
             for (i = 1; i <= n; i++)
+
             {
-                sum *= i;
+                if (i % 7 == 0)
+                {
+                    Console.WriteLine("Boom");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
             }
-            Console.WriteLine(sum);
         }
     }
 }
